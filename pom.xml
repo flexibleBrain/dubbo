@@ -131,8 +131,8 @@
 
         <!-- for maven compiler plugin -->
         <maven_compiler_plugin_version>2.3.2</maven_compiler_plugin_version>
-        <java_source_version>1.5</java_source_version>
-        <java_target_version>1.5</java_target_version>
+        <java_source_version>1.7</java_source_version>
+        <java_target_version>1.7</java_target_version>
         <file_encoding>UTF-8</file_encoding>
         
 	</properties>
@@ -382,9 +382,9 @@
 				<configuration>
 					<useSystemClassLoader>true</useSystemClassLoader>
 					<forkMode>once</forkMode>
-					<argLine>${argline}</argLine>
+					<!--<argLine>${argline}</argLine>
 					<systemProperties>
-						<!-- common shared -->
+						&lt;!&ndash; common shared &ndash;&gt;
 						<property>
 							<name>transporter</name>
 							<value>${transporter}</value>
@@ -393,7 +393,7 @@
 							<name>serialization</name>
 							<value>${serialization}</value>
 						</property>
-						<!-- server side -->
+						&lt;!&ndash; server side &ndash;&gt;
 						<property>
 							<name>port</name>
 							<value>${port}</value>
@@ -410,7 +410,7 @@
 							<name>iothreads</name>
 							<value>${iothreads}</value>
 						</property>
-						<!-- client side -->
+						&lt;!&ndash; client side &ndash;&gt;
 						<property>
 							<name>server</name>
 							<value>${server}</value>
@@ -443,7 +443,7 @@
 							<name>onerror</name>
 							<value>${onerror}</value>
 						</property>
-					</systemProperties>
+					</systemProperties>-->
 				</configuration>
 			</plugin>
 			<plugin>
