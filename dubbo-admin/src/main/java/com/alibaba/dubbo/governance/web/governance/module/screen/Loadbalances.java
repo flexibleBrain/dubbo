@@ -7,13 +7,6 @@
  */
 package com.alibaba.dubbo.governance.web.governance.module.screen;
 
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Map;
-
-import org.apache.commons.lang.StringUtils;
-import org.springframework.beans.factory.annotation.Autowired;
-
 import com.alibaba.dubbo.common.utils.CollectionUtils;
 import com.alibaba.dubbo.governance.service.OverrideService;
 import com.alibaba.dubbo.governance.service.ProviderService;
@@ -22,6 +15,12 @@ import com.alibaba.dubbo.registry.common.domain.LoadBalance;
 import com.alibaba.dubbo.registry.common.domain.Provider;
 import com.alibaba.dubbo.registry.common.util.OverrideUtils;
 import com.alibaba.dubbo.registry.common.util.Tool;
+import org.apache.commons.lang3.StringUtils;
+import org.springframework.beans.factory.annotation.Autowired;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Map;
 
 /**
  * Providers.

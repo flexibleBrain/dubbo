@@ -15,19 +15,18 @@
  */
 package com.alibaba.dubbo.rpc.protocol.hessian;
 
-import java.io.ByteArrayOutputStream;
-import java.io.IOException;
-import java.io.InputStream;
-import java.io.OutputStream;
-import java.net.URL;
-
+import com.caucho.hessian.client.HessianConnection;
 import org.apache.http.HttpResponse;
 import org.apache.http.client.HttpClient;
 import org.apache.http.client.methods.HttpPost;
 import org.apache.http.entity.ByteArrayEntity;
 import org.apache.http.message.BasicHeader;
 
-import com.caucho.hessian.client.HessianConnection;
+import java.io.ByteArrayOutputStream;
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.OutputStream;
+import java.net.URL;
 
 /**
  * HttpClientConnection
@@ -85,4 +84,7 @@ public class HttpClientConnection implements HessianConnection {
     public void destroy() throws IOException {
     }
 
+    public String getContentEncoding() {
+        return "UTF-8";
+    }
 }
